@@ -1,0 +1,179 @@
+/* Quantum Logo Styles */
+.quantum-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo-icon {
+  position: relative;
+}
+
+.quantum-symbol {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.quantum-ring {
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  border: 3px solid;
+  border-image: linear-gradient(135deg, #667eea, #764ba2, #f093fb) 1;
+  border-radius: 50%;
+  animation: rotate 8s linear infinite;
+}
+
+@keyframes rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.quantum-core {
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 24px;
+  font-weight: 800;
+  font-family: 'Arial Black', sans-serif;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+  letter-spacing: -1px;
+}
+
+.logo-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+}
+
+.company-name {
+  font-size: 22px;
+  font-weight: 800;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  letter-spacing: 1px;
+  font-family: 'Arial Black', sans-serif;
+}
+
+.company-tagline {
+  font-size: 13px;
+  font-weight: 600;
+  color: #6b7280;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+/* Size Variants */
+.logo-small .quantum-ring {
+  width: 30px;
+  height: 30px;
+  border-width: 2px;
+}
+
+.logo-small .quantum-core {
+  width: 26px;
+  height: 26px;
+  font-size: 16px;
+}
+
+.logo-small .company-name {
+  font-size: 16px;
+}
+
+.logo-small .company-tagline {
+  font-size: 10px;
+}
+
+.logo-medium .quantum-ring {
+  width: 45px;
+  height: 45px;
+}
+
+.logo-medium .quantum-core {
+  width: 40px;
+  height: 40px;
+  font-size: 24px;
+}
+
+.logo-large .quantum-ring {
+  width: 60px;
+  height: 60px;
+  border-width: 4px;
+}
+
+.logo-large .quantum-core {
+  width: 52px;
+  height: 52px;
+  font-size: 32px;
+}
+
+.logo-large .company-name {
+  font-size: 28px;
+}
+
+.logo-large .company-tagline {
+  font-size: 14px;
+}
+
+.logo-xlarge .quantum-ring {
+  width: 80px;
+  height: 80px;
+  border-width: 5px;
+}
+
+.logo-xlarge .quantum-core {
+  width: 70px;
+  height: 70px;
+  font-size: 42px;
+}
+
+.logo-xlarge .company-name {
+  font-size: 36px;
+}
+
+.logo-xlarge .company-tagline {
+  font-size: 16px;
+}
+
+/* Icon Only Variant */
+.quantum-logo-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.quantum-q {
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 24px;
+  font-weight: 800;
+  font-family: 'Arial Black', sans-serif;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+}
+
+.logo-icon.logo-small .quantum-q {
+  width: 26px;
+  height: 26px;
+  font-size: 16px;
+}
+
+.logo-icon.logo-large .quantum-q {
+  width: 52px;
+  height: 52px;
+  font-size: 32px;
+}
